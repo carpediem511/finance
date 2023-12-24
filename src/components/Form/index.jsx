@@ -81,7 +81,7 @@ const ExpensesForm = ({ addNewSpending }) => {
                 dateFormat="dd.MM.yyyy"
                 isClearable
                 placeholderText="	Пока здесь пусто"
-                className="border flex mx-auto mt-1 border-solid rounded-md outline-none border-gray-300 px-2 py-2 focus:border-2 focus:border-sky-500"
+                className="border flex mx-auto mt-1 border-solid rounded-md outline-none border-gray-300 px-2 py-2 focus:border-2 focus:border-indigo-500"
               />
             </div>
 
@@ -101,7 +101,7 @@ const ExpensesForm = ({ addNewSpending }) => {
                   }
                 }}
                 type="text"
-                className="border pl-2 mt-1 border-solid rounded-md outline-none border-gray-300 mx-auto py-2 focus:border-2 focus:border-sky-500"
+                className="border pl-2 mt-1 border-solid rounded-md outline-none border-gray-300 mx-auto py-2 focus:border-2 focus:border-indigo-500"
               />
             </div>
           </div>
