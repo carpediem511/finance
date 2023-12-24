@@ -94,7 +94,7 @@ const FilteredMonths = ({ purchases }) => {
   }));
 
   return (
-    <div className="w-full px-4 py-16">
+    <div className="w-full px-4 pt-16">
       {/* компонент для отображения списка месяцев */}
       <RadioGroup value={selectedMonth} onChange={setSelectedMonth}>
         <RadioGroup.Label className="sr-only">Выбрать месяц</RadioGroup.Label>
@@ -151,7 +151,7 @@ const FilteredMonths = ({ purchases }) => {
           <h2 className="text-xl text-center text-indigo-600 font-bold mt-10">
             Ваши траты за "{selectedMonth.toLowerCase()}": {totalExpenses} руб.
           </h2>
-          <div className="flex flex-row justify-center items-center">
+          <div className="flex justify-center items-center">
             <PieChart width={400} height={400}>
               <Pie
                 data={chartData}
@@ -173,12 +173,10 @@ const FilteredMonths = ({ purchases }) => {
               <Tooltip />
               <Legend
                 formatter={(value, entry) => entry.payload.legendLabel}
-                align="right"
+                align="center"
                 verticalAlign="middle"
                 layout="vertical"
                 wrapperStyle={{
-                  top: 100,
-                  right: -180,
                   backgroundColor: "#F3F4F6",
                   border: "1px solid #d5d5d5",
                   borderRadius: 3,
@@ -186,6 +184,7 @@ const FilteredMonths = ({ purchases }) => {
                   padding: "10px",
                   fontWeight: "bold",
                   boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+                  position: "static",
                 }}
               />
             </PieChart>
